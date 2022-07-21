@@ -21,6 +21,7 @@ from abcpy.utils import cached
 from abcpy.transformers import BoundedVarTransformer, DummyTransformer
 
 
+
 class InferenceMethod(GraphTools, metaclass=ABCMeta):
     """
         This abstract base class represents an inference method.
@@ -32,7 +33,8 @@ class InferenceMethod(GraphTools, metaclass=ABCMeta):
         is not pickled
         """
         state = self.__dict__.copy()
-        del state['backend']
+        if 'backend' in state:
+            del state['backend']
         return state
 
     @abstractmethod

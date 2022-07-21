@@ -25,3 +25,7 @@ def BackendMPITestHelper(*args, **kwargs):
 def BackendSpark(*args, **kwargs):
     from abcpy.backends.spark import BackendSpark
     return BackendSpark(*args, **kwargs)
+
+def BackendRayOnDask(*args, **kwargs):
+    from abcpy.backends.rayondask import BackendRayOnDask
+    return BackendRayOnDask(*args, **kwargs)
