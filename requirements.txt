@@ -6,7 +6,6 @@ sklearn
 sphinx
 sphinx_rtd_theme 
 coverage
-mpi4py
 cloudpickle
 matplotlib
 tqdm
