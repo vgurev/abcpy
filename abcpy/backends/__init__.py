@@ -29,3 +29,7 @@ def BackendSpark(*args, **kwargs):
 def BackendRayOnDask(*args, **kwargs):
     from abcpy.backends.rayondask import BackendRayOnDask
     return BackendRayOnDask(*args, **kwargs)
+
+def BackendRay(*args, **kwargs):
+    from abcpy.backends.raybackend import BackendRay
+    return BackendRay(*args, **kwargs)
